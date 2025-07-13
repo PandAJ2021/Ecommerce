@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'accounts.apps.AccountsConfig',
     'rest_framework_simplejwt.token_blacklist',
+    'products.apps.ProductsConfig',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,7 @@ SIMPLE_JWT = {
     "BLACKLIST_AFTER_ROTATION": True,
     "ROTATE_REFRESH_TOKENS": True,
 }
+
+#Media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
