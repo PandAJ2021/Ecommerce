@@ -7,7 +7,8 @@ class AddressSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Address
-        fields = ['province', 'city', 'street', 'code']
+        fields = ['id', 'province', 'city', 'street', 'code']
+        read_only = ['id']
 
 
 class OrderSerializer(serializers.ModelSerializer):
